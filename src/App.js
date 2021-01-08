@@ -5,10 +5,6 @@ import Mycars from './components/Mycars';
 
 class App extends Component {
 
-  state = {
-    titre: 'Mon catalogue Voitures'
-  }
-
   // changeTitle = (e) => {
   //   this.setState({
   //     titre: 'Mon nouveau titre'
@@ -36,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Mycars title={this.state.titre}/>
+        <Mycars />
 
         {/* <button onClick={this.changeTitle}>Changer le nom en dur</button>
         <button onClick={() => this.changeViaParam('Titre via un param')}>Via param</button>
